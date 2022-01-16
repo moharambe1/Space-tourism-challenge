@@ -152,8 +152,42 @@ body {
 }
 
 @media screen and(min-width: 400px ){
-  body{
-    background-color: white;
-
+  html{
+    font-size: 65%;
   }
+  
+  .image-dev{
+
+    grid-row: -2/-1;
+    border-bottom: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 400px;
+ //   max-width: 100%;
+    background-image: url(/assets/image/crew/image-douglas-hurley.webp);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-clip: padding-box;
+    img{
+      display: none;
+      opacity: 0;
+      max-width: auto;
+      max-height: auto;
+    }
+  }
+  .title{
+    text-align: start;
+    justify-self: start;
+    padding-left: 2vw;
+  }
+
+
+  .container{
+    min-height: fit-content;
+  }
+  .background{
+    max-width: 71ch;
+  }
+
 }
