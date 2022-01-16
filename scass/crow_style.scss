@@ -1,0 +1,159 @@
+//@import "debag-color";
+
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+html{
+  font-size: 55%;
+}
+@import "page-style";
+
+body {
+  background-image: url(/assets/image/crew/background-crew-mobile.jpg);
+}
+
+@import "navbar";
+
+.navbar-nav {
+  //display: none;
+}
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, auto) 1fr;
+  grid-auto-flow: row;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  row-gap: 3rem;
+  //transform: scale(1.1,1);
+}
+
+.navbar {
+  //height: auto;
+  padding-top: 1vh;
+}
+.navlink-li{
+  display: none;
+}
+.title {
+
+  font-family: Barlow Condensed;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  //padding: 1rem 0  1rem 1rem;
+  text-align: center;
+  justify-self: center;
+  span {
+    font-weight: bold;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+}/*
+
+*/
+.container{
+  
+  min-height: 312px;
+  //padding-bottom: 30%;
+}
+.job {
+
+  font-family: Bellefair;
+  font-size: 2.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.name {
+
+  font-size: 4rem;
+  text-align: center;
+  //line-height: 64px;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.background {
+
+  //padding-bottom: 4vh;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  //max-height: 15vh;
+  
+  //font-size: 18px;
+  max-width: 51ch;
+  text-align: center;
+  //max-height: 400px;
+  margin: 0 auto;
+  //max-width: 500px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 1rem;
+  color: #d0d6f9;
+}
+
+
+.slider {
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: repeat(4, 4vw);
+  column-gap: 2%;
+  justify-self: center;
+
+  * {
+    border-radius: 50%;
+    
+    
+    width: 2vw;
+    height: 2vw;
+
+    background-color: #ffffff;
+    mix-blend-mode: normal;
+    
+    opacity: 0.17;
+  }
+
+  grid-auto-flow: column;
+}
+.cir-selected {
+  opacity: 1;
+}
+.image-dev {
+  grid-row: 3/4;
+
+  grid-template-columns: 100%;
+  background-attachment: local;
+  min-height: 227px;
+  width: 80vw;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  border-bottom: 0.1rem solid grey;
+  
+  img{
+    justify-self: center;
+    align-self: flex-end;
+    min-height: 227px;
+    max-height: 35vh;
+    //position: absolute;
+    object-fit: fill;
+
+  }
+
+}
+
+@media screen and(min-width: 400px ){
+  body{
+    background-color: white;
+
+  }
+}

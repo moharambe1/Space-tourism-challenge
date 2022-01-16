@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 55%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: Barlow;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-color: black;
+  height: 100vh;
+  width: 99.8vw;
+  margin: 0;
+  padding-left: 0.1vw;
+  padding-right: 0.1vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-image: url(/assets/image/crew/background-crew-mobile.jpg);
+}
+
+.navbar {
+  font-family: Barlow Condensed;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+.navlink-li {
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(81.55px);
+          backdrop-filter: blur(81.55px);
+}
+
+.navlink {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  grid-auto-flow: column;
+  -webkit-column-gap: 1vw;
+          column-gap: 1vw;
+}
+
+.navlink > * {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 1em;
+}
+
+.logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 2rem;
+}
+
+.logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.link2 {
+  border-bottom: 2px solid white;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (auto)[4] 1fr;
+      grid-template-rows: repeat(4, auto) 1fr;
+  grid-auto-flow: row;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: normal;
+  row-gap: 3rem;
+}
+
+.navbar {
+  padding-top: 1vh;
+}
+
+.navlink-li {
+  display: none;
+}
+
+.title {
+  font-family: Barlow Condensed;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.title span {
+  font-weight: bold;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+/*
+
+*/
+.container {
+  min-height: 312px;
+}
+
+.job {
+  font-family: Bellefair;
+  font-size: 2.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.name {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.background {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  max-width: 51ch;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 1rem;
+  color: #d0d6f9;
+}
+
+.slider {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (4vw)[4];
+      grid-template-columns: repeat(4, 4vw);
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  grid-auto-flow: column;
+}
+
+.slider * {
+  border-radius: 50%;
+  width: 2vw;
+  height: 2vw;
+  background-color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.17;
+}
+
+.cir-selected {
+  opacity: 1;
+}
+
+.image-dev {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  background-attachment: local;
+  min-height: 227px;
+  width: 80vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  border-bottom: 0.1rem solid grey;
+}
+
+.image-dev img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  min-height: 227px;
+  max-height: 35vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: white;
+  }
+}

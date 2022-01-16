@@ -1,0 +1,347 @@
+
+//@import "debag-color";
+
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  color: white;
+  font-family: Barlow;
+  font-weight: bold;
+  
+}
+
+
+
+body {
+  background-image: url(/assets/image/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: black;
+
+  height: 98vh;
+  width: 99.8vw;
+  margin: 0;
+  padding-left: 0.1vw;
+  padding-right: 0.1vw;
+
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+body {
+  display: grid;
+  grid-template-rows: 1% 8% 1fr 5% 1fr 60% 3fr;
+  grid-template-columns: 100%;
+  grid-auto-flow: row;
+  row-gap: 0;
+}
+
+@import "navbar";
+
+.navbar{
+  grid-row: 2/3;
+}
+
+.title {
+  margin: 0;
+
+  grid-row: 4/5;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 5fr;
+
+  //grid-row: 100%;
+  > h2 {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+   
+
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    > span {
+      mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+  }
+}
+
+.container {
+  // background-color: yellow;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 2fr 40% 1fr 30% 2fr;
+  grid-auto-flow: row;
+  grid-row: 6/7;
+}
+.dest-img-container {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+.details {
+  margin: 0;
+  padding: 0;
+  grid-column: 4/5;
+  height: 100%;
+
+  display: grid;
+  
+  grid-template-columns: 100%;
+
+  .menu-destn {
+    //align-self: center;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0 auto auto auto auto 6fr;
+
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+
+    color: #d0d6f9;
+
+    > * {
+      margin-right: 4vw;
+      padding-bottom: 1vh;
+      font-size: 16px;
+      align-self: start;
+    }
+    .Moon {
+      grid-column: 2/3;
+      border-bottom: 2px solid #979797;
+      color: #FFFFFF;
+    }
+    .Mars {
+      grid-column: 3/4;
+    }
+    .Europa {
+      grid-column: 4/5;
+    }
+    .Titan {
+      grid-column: 5/6;
+    }
+  }
+
+  .detail {
+    //border-bottom: 1px solid hsla(231, 15%, 26%, 1);
+    > h1 {
+      margin: 0;
+      font-family: Bellefair;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100px;
+      line-height: 115px;
+      //background-color: whitesmoke;
+    }
+    > p {
+      margin: 0;
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  .travel-ls {
+    align-self: end;
+    border-top: 1px solid hsla(231, 15%, 26%, 1);
+    padding-top: 7%;
+  }
+  .travel {
+    display: grid;
+    padding: 0;
+    width: 100%;
+
+    grid-template-columns: auto 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 2%;
+
+    .avg-distance {
+      grid-column: 1/2;
+      grid-row: 1/2;
+
+      font-family: Barlow Condensed;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 2.3625px;
+      text-transform: uppercase;
+
+      color: #d0d6f9;
+    }
+
+    .nmb-distance {
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+      font-family: Bellefair;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 32px;
+
+      text-transform: uppercase;
+    }
+
+    .trv-time {
+      grid-column: 3/4;
+      grid-row: 1/2;
+
+      font-family: Barlow Condensed;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 2.3625px;
+      text-transform: uppercase;
+
+      color: #d0d6f9;
+    }
+    .nmb-time {
+      grid-column: 3/4;
+      grid-row: 2/3;
+
+      font-family: Bellefair;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 32px;
+
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (max-width: 1000px){
+  .linkTag{
+    display: none;
+  }
+  body{
+    grid-template-rows: 1% 8% 1fr 5% 1fr 80% 0;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: 100vh;
+  }
+  .navbar{
+    .navbar-nav{
+      //display: none;
+     //font-size: 8px;
+     
+    }
+    .navlink{
+      font-size: 0.8em;
+      padding-left: 0.1em;
+      column-gap: 0.1em;
+    }
+  }
+  
+  .title{
+    //padding-bottom: 1vh;
+    >h2{
+      font-size: 20px;
+     // padding-bottom: 1vh;
+    }
+  }
+  .container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    //grid-row: 30% 70%;
+    grid-template-rows: auto auto;
+    //padding-top: 1vh;
+    //padding-top: 2%;
+    row-gap: 2%;
+    .destinaton-image{
+      width: 30vw;
+      height: 30vw;
+    }
+    .dest-img-container{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .details{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      width: 100%;
+      max-width: 600px;
+      height: 100%;
+      justify-self: center;
+      text-align: center;
+     // padding-bottom: 10%;
+      row-gap: 2%;
+    }
+    
+    .menu-destn{
+      grid-template-columns: 1fr auto auto auto auto 1fr;
+      column-gap: 8%;
+      >*{
+        margin: 0;
+        padding-left: 0;
+      }
+      
+    }
+    .travel-ls{
+    //  padding-top: 2%;
+    }
+    .travel{
+      grid-template-columns: 50% 0fr 50% 0fr;
+      grid-template-rows: auto auto;
+
+      align-items: center;
+      
+    }
+  }
+}
+
+@media screen and  (max-width:400px){
+  
+  /*
+  .navbar{
+    .navlink{
+    
+      padding: 0;
+      //font-size: 0.8em;
+      //overflow: hidden;
+      column-gap: 1vw;
+      >*{
+        padding: 0;
+        display: none;
+        //overflow: hidden;
+      }
+    }
+  }
+
+  .title{
+    >h2{
+      font-size: 14px;
+
+    }
+  }*/
+}

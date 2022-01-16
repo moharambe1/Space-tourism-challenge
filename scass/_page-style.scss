@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  
+  color: white;
+  font-family: Barlow;
+}
+
+body {
+  //background-image: url(/assets/image/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-color: black;
+
+  height: 100vh;
+  width: 99.8vw;
+  margin: 0;
+  padding-left: 0.1vw;
+  padding-right: 0.1vw;
+
+  //overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

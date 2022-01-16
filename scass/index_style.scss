@@ -1,0 +1,328 @@
+$ImagePath: "/assets/image";
+$NavBackgroundColor: #979797;
+html {
+  box-sizing: border-box;
+}
+body {
+  background-image: url($ImagePath + "/home/background-home-desktop.jpg");
+   // background-color: gray;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: Bellefair;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*
+
+.container{
+    background-color: crimson;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: span 2;
+    gap: 20px;
+}
+.iteam {
+    background-color: #bad55b;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    
+    
+    >li{
+        list-style: none;
+       
+    }
+    >.logo{
+        display: flex;
+        align-items:center ;
+    }
+    >.navpad{
+        flex:1 10;
+        background-color: #FFFFFF00;
+  
+    }
+    >.navline{
+        flex: 20 2;
+        display: flex;
+        height: 0.5vh;
+        margin: 4.5vh 10vh;
+
+        background-color: #97979770;
+        align-items: center;
+        align-content: center;
+        .line{
+            height: 10vh;
+            
+            
+        }
+    }
+
+    
+}
+
+.nav-link{
+    display: flex;
+   
+    
+    flex: 5 3 auto;
+    align-content: space-between;
+    align-items: stretch;
+    li[class^="#"]{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        flex: 1 3 auto;
+    }
+   
+}
+
+.nav-link-background{
+    position: absolute;
+    background-image: url(/assets/image/shared/Rectangle.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    z-index: -1;
+    left: 40%;
+    top: 2.4%;
+    //filter: blur(10px);
+    backdrop-filter: blur(20px);
+    width: 60%;
+    height: 10%;
+    
+    
+}
+*/
+
+.navbar {
+  margin: 0;
+  display: block;
+  //height: 8vh;
+  width: 100vw;
+  
+  padding-top: 10px;
+  
+}
+
+.navbar-nav {
+  margin: 0;
+  display: grid;
+  width: 100fr;
+  height: 8vh;
+  //border: 20px;
+  border-color: black;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: column;
+  column-gap: 1vw;
+  list-style: none;
+  
+ 
+  .logo{
+    //background-color: $NavBackgroundColor;
+    //backdrop-filter: blur(3px);
+    align-self: center;
+    padding-right: 1vw;
+  }
+  .navline {
+    //display: inline;
+    align-self: center;
+    //border-width: 100px;
+    //height: 0px;
+    //background-image: url(/assets/image/shared/Rectangle.png);
+    
+    border-bottom: 2px solid $NavBackgroundColor;
+    opacity: 0.5;
+    //background-color: white;
+    //width: 10vw;
+  }
+}
+
+
+.nav-link-l{
+   display: grid;
+  width: 100fr;
+  //border: 20px;
+  border-color: black;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: column;
+  column-gap: 1vw;
+  list-style: none;
+  padding-right: 10vw;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  
+}
+.nav-link {
+  //background-color: ;
+  display: grid;
+  font-weight: bold;
+ // backdrop-filter: blur(10px);
+  padding: 0 1vw;
+  align-content: center;
+ // background-color: $ImagePath;
+}
+
+
+
+.spacetext{
+  display: grid;
+  position: absolute;
+  height: 41vh;
+  width: 9em;
+  left:8vw;
+  top:35vh;
+  align-content: center;
+  justify-self: start;
+  //background-color: aqua;
+  color:white;
+  h1{
+
+    margin: 0;
+    grid-column: auto;
+    font-size: 8em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  h2{
+    margin: 0;
+    margin-left: 8px;
+    font-size: 1.44em;   
+    font-weight: normal;
+    text-transform: uppercase;
+    color: hsla(231, 79%, 90%, 1);
+  }
+  p{
+    margin: 0;
+    margin-left: 0.1em;
+    font-size: 1em ;  
+    margin-right: 0.8em;
+    font-weight: normal;
+    color: hsla(231, 79%, 90%, 1);
+    line-height: 32px;
+  }
+}
+
+.explore{
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 7em;
+  width: 7em;
+  
+  top:49vh;
+  right:14vw;
+  
+  
+  //background-color: aqua;
+  color: hsla(230, 35%, 7%, 1);
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  background-color:hsla(0, 0%, 100%, 1);
+  
+}
+@media screen and (max-width: 1060px) {
+  body{
+    background-image: url(/assets/image/home/background-home-tablet.jpg);
+  }
+  .navline{
+    visibility: hidden;
+  }
+  .nav-link-l{
+    padding-right: 2vw;
+    .linkTag{
+      display: none;
+    }
+  }
+  .spacetext{
+    position: relative;
+    top:auto;
+    left: auto;
+    justify-self: center;
+   // background-color: gold;
+    justify-items: center;
+    text-align: center;
+    width: auto;
+    grid-area: "texts";
+    grid-column: 2/3;
+    grid-row: 2/3;
+    >h2{
+      font-size: 20px;
+      margin: 0;
+      //width: 44vw;
+    }
+  }
+  .explore{
+    grid-area: "expl";
+    position: relative;
+    top:auto;
+    right:auto;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: end;
+    
+  }
+  .container{
+  
+   display: grid;
+   width: 100vw;
+   height: 90vh;
+   
+   grid-template-columns: 1fr 48vw 1fr;
+   grid-template-rows:1fr auto 1fr 8fr;
+   grid-auto-flow: row;
+   // align-items: c;
+   grid-auto-flow: row;
+   justify-items: center;
+  // row-gap: 1vh;
+   
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar{
+    width: 98;
+  }
+  .nav-link-l{
+    display: none;
+  }
+  .container{
+    height: 86vh;
+    grid-template-columns: 1fr auto 1f;
+    grid-template-rows: 1fr auto 1fr 8fr;
+  }
+  .spacetext{
+    width: 80vw;
+    h1{
+      font-size: 100px;
+    }
+    h2{
+      font-size: 16px;
+    }
+    p{
+      font-size: 15px;
+      line-height: 25px;
+
+    }
+  }
+  .explore{
+    height: 7em;
+    width: 7em;
+    font-size: 1.4em;
+  }
+}
